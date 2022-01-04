@@ -78,7 +78,7 @@ export default function Home() {
       icon: CursorClickIcon,
     },
     {
-      name: "24/7 Customer Service",
+      name: "Customer Service",
       description:
         "Call direct anytime day or night, no phone trees or automated responses.",
       icon: PhoneIcon,
@@ -135,7 +135,7 @@ export default function Home() {
       description: [
         "Unlimited Edits",
         "Includes Hosting",
-        "24/7 Customer Service",
+        "Customer Service",
         "Lifetime Updates",
       ],
       link: "jescultura.com",
@@ -178,12 +178,12 @@ export default function Home() {
       <Header />
       <main>
         <div className="h-screen/3/4 grid place-items-center" ref={vantaRef}>
-          <div className="px-3">
-            <h2 className="text-3xl font-medium">
+          <div className="px-3 md:px-16 lg:w-8/12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">
               Small Business <br />
               Web Design + Development
             </h2>
-            <p className="py-5">
+            <p className="py-5 md:text-lg md:w-10/12 lg:pb-16">
               No page builders or WordPress - We offer 100% hand-coded websites
               with superior results starting at ₱5,000/month.
             </p>
@@ -191,66 +191,75 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-mainBg to-secondaryBg py-20">
-          <div className="text-center px-5 mb-10 ">
-            <h2 className="text-3xl font-medium mb-5">What we do</h2>
-            <p>
+        <div className="bg-gradient-to-b from-mainBg to-secondaryBg py-20 lg:h-full">
+          <div className="text-center px-5 mb-10">
+            <h2 className="text-3xl md:text-4xl font-medium mb-5">
+              What we do
+            </h2>
+            <p className="md:text-lg lg:px-72">
               We specialize in small business web design and development for
               clients anywhere in the Philippines. Every line of code is written
               by hand to ensure the best performance, which helps bring in more
               customers to your site and bring more revenue to your business.
             </p>
           </div>
-          <div className="relative grid gap-10 px-4 py-6 mt-8 text-center">
-            {PrimaryServices.map((item) => (
-              <div key={item.name} className="flex flex-col place-items-center">
-                <item.icon className="h-12 w-12" aria-hidden="true" />
-                <h2 className="text-xl font-medium py-3">{item.name}</h2>
-                <p>{item.description}</p>
-              </div>
-            ))}
+          <div className="lg:flex lg:flex-col items-center">
+            <div className="relative grid md:grid-cols-3 gap-10 px-4 py-6 lg:py-16 lg:mt-16 mt-8 text-center lg:place-items-center lg:w-8/12">
+              {PrimaryServices.map((item) => (
+                <div
+                  key={item.name}
+                  className="flex flex-col place-items-center "
+                >
+                  <item.icon className="h-12 w-12" aria-hidden="true" />
+                  <h2 className="text-xl font-medium py-3">{item.name}</h2>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="px-5 mt-20">
-          <div className="mt-4">
-            <h2 className="text-2xl">
-              ₱5,000 Per Month, 6 Months Minimum Contract
-            </h2>
-            <p className="mt-8">
-              ₱8,000 down for a standard 5 page small business website. If you
-              need more than that then we have to do custom pricing based on the
-              scope of work, number of additional pages, and time involved.
-            </p>
-            <p className="mt-8">
-              You own your domain, content, listing, and profiles. Cancel
-              anytime with no fees or hassle.
-            </p>
-          </div>
-
-          <div className="relative grid gap-8 px-4 py-6 mt-8">
-            {services.map((item) => (
-              <div
-                key={item.title}
-                href={item.href}
-                className="-m-3 p-3 bg-white flex items-start rounded-lg hover:bg-gray-50"
-              >
-                <item.icon
-                  className="flex-shrink-0 h-6 w-6 text-mainColor"
-                  aria-hidden="true"
-                />
-                <div className="ml-4">
-                  <p className="text-base font-medium text-gray-900">
-                    {item.title}
-                  </p>
-                  <p className="mt-1 text-sm text-gray-500">
-                    {item.description}
-                  </p>
+        <div>
+          <div className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full">
+            <div className="mt-4 lg:pl-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold">
+                ₱5,000 Per Month, 6 Months Minimum Contract
+              </h2>
+              <p className="mt-8 md:text-lg lg:w-9/12">
+                ₱8,000 down for a standard 5 page small business website. If you
+                need more than that then we have to do custom pricing based on
+                the scope of work, number of additional pages, and time
+                involved.
+              </p>
+              <p className="mt-8 md:text-lg lg:w-9/12">
+                You own your domain, content, listing, and profiles. Cancel
+                anytime with no fees or hassle.
+              </p>
+            </div>
+            <div className="relative grid gap-8 px-4 py-6 mt-8 md:grid-cols-3">
+              {services.map((item) => (
+                <div
+                  key={item.name}
+                  href={item.href}
+                  className="-m-3 py-10 px-6 bg-white flex md:flex-col items-start md:items-center md:text-center rounded-lg hover:bg-gray-50"
+                >
+                  <item.icon
+                    className="flex-shrink-0 h-10 w-10 text-mainColor"
+                    aria-hidden="true"
+                  />
+                  <div className="ml-4 md:ml-0 md:mt-8">
+                    <p className="md:text-xl font-medium text-gray-900">
+                      {item.name}
+                    </p>
+                    <p className="md:text-lg mt-1 text-gray-500">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div>
-            <div className="relative flex flex-col gap-12 px-4 py-2 mt-8 ">
+          <div className="mt-40 px-5 py-8 lg:flex lg:flex-col text-center items-center bg-gradient-to-b from-mainBg to-pink-200">
+            <div className="relative grid md:grid-cols-3 gap-10 px-4 py-6 mt-8 text-center lg:px-16 lg:w-10/12">
               {pricing.map((item) => (
                 <div
                   key={item.title}
@@ -260,13 +269,13 @@ export default function Home() {
                     {item.title}
                   </h2>
                   <p className="py-4 text-lg">{item.subTitle}</p>
-                  <h2 className="text-5xl font-medium text-gray-900 pt-4">
+                  <h2 className="text-5xl font-medium text-gray-900 pt-4 lg:py-16 lg:text-7xl">
                     ₱{item.price}
                     <span className="text-base">/MO</span>
                   </h2>
-                  <ul className="py-8">
+                  <ul className="py-8 lg:pb-16">
                     {item.description.map((desc) => (
-                      <li className="text-gray-500 my-2">
+                      <li className="text-gray-500 my-2 lg:text-lg">
                         <CheckIcon className="w-5 h-5 inline-block mr-2" />
                         {desc}
                       </li>

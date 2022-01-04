@@ -105,11 +105,7 @@ export default function Example() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt=""
-              />
+              Grey
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -198,19 +194,19 @@ export default function Example() {
               href="#"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              Pricing
+              Services
             </a>
             <a
               href="#"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              Docs
+              Pricing
             </a>
 
             <Popover className="relative">
               {({ open }) => (
                 <>
-                  <Popover.Button
+                  {/* <Popover.Button
                     className={classNames(
                       open ? "text-gray-900" : "text-gray-500",
                       "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -224,7 +220,7 @@ export default function Example() {
                       )}
                       aria-hidden="true"
                     />
-                  </Popover.Button>
+                  </Popover.Button> */}
 
                   <Transition
                     as={Fragment}
@@ -301,15 +297,10 @@ export default function Example() {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Sign in
-            </a>
-            <a
-              href="#"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-mainColor hover:bg-mainColor-dark"
             >
-              Sign up
+              <PhoneIcon className="w-5 h-5 mr-4" />
+              Contact Us
             </a>
           </div>
         </div>
@@ -331,13 +322,7 @@ export default function Example() {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
-                </div>
+                <div>Grey</div>
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
@@ -371,14 +356,14 @@ export default function Example() {
                   href="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Pricing
+                  Services
                 </a>
 
                 <a
                   href="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Docs
+                  Pricing
                 </a>
                 {resources.map((item) => (
                   <a
