@@ -31,11 +31,11 @@ export default function Home() {
         net({
           el: vantaRef.current,
           THREE,
-          color: 0xff3f81,
-          backgroundColor: 0xe5e5e5,
+          color: 0xffbd8f,
+          backgroundColor: 0xfafcff,
           points: 12.0,
           maxDistance: 10.0,
-          spacing: 17.0,
+          spacing: 12.0,
         })
       );
     }
@@ -179,11 +179,11 @@ export default function Home() {
       <main>
         <div className="h-screen/3/4 grid place-items-center" ref={vantaRef}>
           <div className="px-3 md:px-16 lg:w-8/12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-mainTextColor">
               Small Business <br />
               Web Design + Development
             </h2>
-            <p className="py-5 md:text-lg md:w-10/12 lg:pb-16">
+            <p className="py-5 md:text-lg md:w-10/12 lg:pb-16 text-secondaryTextColor">
               No page builders or WordPress - We offer 100% hand-coded websites
               with superior results starting at ₱5,000/month.
             </p>
@@ -193,10 +193,10 @@ export default function Home() {
 
         <div className="bg-gradient-to-b from-mainBg to-secondaryBg py-20 lg:h-full">
           <div className="text-center px-5 mb-10">
-            <h2 className="text-3xl md:text-4xl font-medium mb-5">
+            <h2 className="text-3xl md:text-4xl font-medium mb-5 text-mainTextColor">
               What we do
             </h2>
-            <p className="md:text-lg lg:px-72">
+            <p className="md:text-lg lg:px-72 text-secondaryTextColor">
               We specialize in small business web design and development for
               clients anywhere in the Philippines. Every line of code is written
               by hand to ensure the best performance, which helps bring in more
@@ -210,9 +210,14 @@ export default function Home() {
                   key={item.name}
                   className="flex flex-col place-items-center "
                 >
-                  <item.icon className="h-12 w-12" aria-hidden="true" />
-                  <h2 className="text-xl font-medium py-3">{item.name}</h2>
-                  <p>{item.description}</p>
+                  <item.icon
+                    className="h-16 w-16 text-mainTextColor bg-white p-3 rounded-full shadow-xl shadow-shadowColor mb-4"
+                    aria-hidden="true"
+                  />
+                  <h2 className="text-xl font-medium py-3 text-mainTextColor">
+                    {item.name}
+                  </h2>
+                  <p className="text-secondaryTextColor">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -221,16 +226,16 @@ export default function Home() {
         <div>
           <div className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full">
             <div className="mt-4 lg:pl-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
                 ₱5,000 Per Month, 6 Months Minimum Contract
               </h2>
-              <p className="mt-8 md:text-lg lg:w-9/12">
+              <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">
                 ₱8,000 down for a standard 5 page small business website. If you
                 need more than that then we have to do custom pricing based on
                 the scope of work, number of additional pages, and time
                 involved.
               </p>
-              <p className="mt-8 md:text-lg lg:w-9/12">
+              <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">
                 You own your domain, content, listing, and profiles. Cancel
                 anytime with no fees or hassle.
               </p>
@@ -243,11 +248,11 @@ export default function Home() {
                   className="-m-3 py-10 px-6 bg-white flex md:flex-col items-start md:items-center md:text-center rounded-lg hover:bg-gray-50"
                 >
                   <item.icon
-                    className="flex-shrink-0 h-10 w-10 text-mainColor"
+                    className="flex-shrink-0 h-10 w-10 text-SecondaryColor"
                     aria-hidden="true"
                   />
                   <div className="ml-4 md:ml-0 md:mt-8">
-                    <p className="md:text-xl font-medium text-gray-900">
+                    <p className="md:text-xl font-medium text-mainTextColor">
                       {item.name}
                     </p>
                     <p className="md:text-lg mt-1 text-gray-500">
@@ -258,7 +263,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="mt-40 px-5 py-8 lg:flex lg:flex-col text-center items-center bg-gradient-to-b from-mainBg to-pink-200">
+          <div className="mt-10 lg:mt-20 px-5 py-8 lg:flex lg:flex-col text-center items-center bg-gradient-to-b from-mainBg to-secondaryTextColor">
             <div className="relative grid md:grid-cols-3 gap-10 px-4 py-6 mt-8 text-center lg:px-16 lg:w-10/12">
               {pricing.map((item) => (
                 <div

@@ -103,10 +103,7 @@ export default function Example() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">Workflow</span>
-              Grey
-            </a>
+            <h2>Grey</h2>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -167,7 +164,7 @@ export default function Example() {
                             </a>
                           ))}
                         </div>
-                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                        {/* <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           {callsToAction.map((item) => (
                             <div key={item.name} className="flow-root">
                               <a
@@ -182,7 +179,7 @@ export default function Example() {
                               </a>
                             </div>
                           ))}
-                        </div>
+                        </div> */}
                       </div>
                     </Popover.Panel>
                   </Transition>
@@ -351,7 +348,7 @@ export default function Example() {
               </div>
             </div>
             <div className="py-6 px-5 space-y-6">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+              {/* <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <a
                   href="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
@@ -374,20 +371,15 @@ export default function Example() {
                     {item.name}
                   </a>
                 ))}
-              </div>
+              </div> */}
               <div>
                 <a
                   href="#"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-mainColor hover:bg-mainColor-dark ease-in-out duration-200"
                 >
-                  Sign up
+                  <PhoneIcon className="w-5 h-5 mr-4" />
+                  Contact Us
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
-                  <a href="#" className="mainColor hover:text-mainColor-dark">
-                    Sign in
-                  </a>
-                </p>
               </div>
             </div>
           </div>
