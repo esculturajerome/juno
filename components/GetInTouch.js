@@ -53,7 +53,12 @@ function GetInTouch() {
             </p> */}
             </div>
             <div className="flex items-center justify-between">
-              <Button text="Send" />
+              <button
+                className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-mainColor hover:bg-mainColor-dark"
+                type="submit"
+              >
+                Send
+              </button>
             </div>
           </form>
         </div>
