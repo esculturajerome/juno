@@ -30,8 +30,8 @@ module.exports = {
         },
         SecondaryColor: {
           DEFAULT: "#FFBD8F",
-          dark: "#758E4D",
-          light: "#BCC7C2",
+          dark: "#D3A47F",
+          light: "#FDF1E7",
         },
         mainTextColor: "#323B56",
         secondaryTextColor: "#69635C",

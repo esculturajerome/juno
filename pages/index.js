@@ -211,7 +211,7 @@ export default function Home() {
                   className="flex flex-col place-items-center "
                 >
                   <item.icon
-                    className="h-16 w-16 text-mainTextColor bg-white p-3 rounded-full shadow-xl shadow-shadowColor mb-4"
+                    className="h-16 w-16 text-mainColor-dark bg-white p-3 rounded-full shadow-xl shadow-shadowColor mb-4"
                     aria-hidden="true"
                   />
                   <h2 className="text-xl font-medium py-3 text-mainTextColor">
@@ -245,7 +245,7 @@ export default function Home() {
                 <div
                   key={item.name}
                   href={item.href}
-                  className="-m-3 py-10 px-6 bg-white flex md:flex-col items-start md:items-center md:text-center rounded-lg hover:bg-gray-50"
+                  className="-m-3 py-10 px-6 bg-white flex md:flex-col items-start md:items-center md:text-center rounded-lg hover:bg-gray-50 shadow-xl shadow-shadowColor"
                 >
                   <item.icon
                     className="flex-shrink-0 h-10 w-10 text-SecondaryColor"
@@ -263,24 +263,26 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="mt-10 lg:mt-20 px-5 py-8 lg:flex lg:flex-col text-center items-center bg-gradient-to-b from-mainBg to-secondaryTextColor">
+          <div className="mt-10 lg:mt-20 px-5 py-8 lg:flex lg:flex-col text-center items-center ">
             <div className="relative grid md:grid-cols-3 gap-10 px-4 py-6 mt-8 text-center lg:px-16 lg:w-10/12">
               {pricing.map((item) => (
                 <div
                   key={item.title}
-                  className="-m-3 bg-white flex flex-col  items-center rounded-lg hover:bg-gray-50"
+                  className="-m-3 bg-white flex flex-col  items-center rounded-xl hover:bg-gray-50 shadow-xl shadow-shadowColor"
                 >
-                  <h2 className="text-xl font-medium text-white w-full bg-mainColor rounded-t-lg py-5 text-center">
+                  <h2 className="text-xl font-medium text-SecondaryColor-dark w-full bg-SecondaryColor-light rounded-t-xl py-5 text-center">
                     {item.title}
                   </h2>
-                  <p className="py-4 text-lg">{item.subTitle}</p>
-                  <h2 className="text-5xl font-medium text-gray-900 pt-4 lg:py-16 lg:text-7xl">
+                  <p className="py-4 text-lg text-SecondaryColor-dark">
+                    {item.subTitle}
+                  </p>
+                  <h2 className="text-5xl font-medium text-mainColor pt-4 lg:py-16 lg:text-7xl">
                     ₱{item.price}
                     <span className="text-base">/MO</span>
                   </h2>
                   <ul className="py-8 lg:pb-16">
                     {item.description.map((desc) => (
-                      <li className="text-gray-500 my-2 lg:text-lg">
+                      <li className="text-secondaryTextColor my-2 lg:text-lg">
                         <CheckIcon className="w-5 h-5 inline-block mr-2" />
                         {desc}
                       </li>
