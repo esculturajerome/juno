@@ -17,14 +17,13 @@ function Services() {
     },
     {
       name: "Unlimited Edits",
-      description:
-        "Change anything you want at anytime and it will be done that day.",
+      description: "Change anything you want at anytime and it will be done.",
       icon: CursorClickIcon,
     },
     {
       name: "Customer Service",
       description:
-        "Call direct anytime day or night, no phone trees or automated responses.",
+        "Call direct anytime of day, no phone trees or automated responses.",
       icon: PhoneIcon,
     },
     {
@@ -48,11 +47,11 @@ function Services() {
   ];
   return (
     <div
-      className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full"
+      className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full mt-5"
       id="services"
     >
       <div className="mt-4 lg:pl-12">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor mt-5">
           ₱5,000 Per Month, 6 Months Minimum Contract
         </h2>
         <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">

@@ -3,6 +3,7 @@ import Button from "./Button";
 import { useEffect, useRef, useState } from "react";
 import net from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
+import { Link } from "react-scroll";
 
 export default function MainSection() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -40,7 +41,9 @@ export default function MainSection() {
           No page builders or WordPress - We offer 100% hand-coded websites with
           superior results starting at ₱5,000/month.
         </p>
-        <Button text="Get in touch" />
+        <Link to="contact" smooth={true} duration={1000}>
+          <Button text="Get in touch" />
+        </Link>
       </div>
     </div>
   );

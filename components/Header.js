@@ -20,6 +20,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
 import { Link } from "react-scroll";
+import Image from "next/image";
 
 const solutions = [
   {
@@ -109,7 +110,7 @@ export default function Example() {
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="main" smooth={true} duration={1000}>
-              Grey
+              <Image src="/juno-green.svg" height={30} width={100} />
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -338,7 +339,7 @@ export default function Example() {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>Grey</div>
+                <Image src="/juno-green.svg" height={20} width={80} />
                 <div className="-mr-2">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
