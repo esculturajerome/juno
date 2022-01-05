@@ -3,7 +3,7 @@ import Button from "./Button";
 
 function GetInTouch() {
   return (
-    <div className="lg:flex lg:flex-col items-center px-3 my-10" id="contact">
+    <div className="lg:flex lg:flex-col items-center px-3 py-10" id="contact">
       <div className="grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:w-9/12">
         <div className="px-8 mb-8 lg:mb-0">
           <p className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
