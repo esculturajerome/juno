@@ -3,12 +3,9 @@ import Button from "./Button";
 
 function GetInTouch() {
   return (
-    <div className="lg:flex lg:flex-col items-center">
-      <div
-        className="grid lg:grid-cols-2 lg:gap-10 lg:items-center my-20 lg:w-9/12"
-        id="contact"
-      >
-        <div className="">
+    <div className="lg:flex lg:flex-col items-center px-3 my-10" id="contact">
+      <div className="grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:w-9/12">
+        <div className="px-8 mb-8 lg:mb-0">
           <p className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
             Get in touch
           </p>
@@ -17,7 +14,7 @@ function GetInTouch() {
             questions.
           </p>
         </div>
-        <div className="w-full max-w-lg py-10 px-6 bg-white rounded-lg hover:bg-gray-50 shadow-xl shadow-shadowColor">
+        <div className="py-10 px-2 bg-white rounded-lg hover:bg-gray-50 shadow-xl shadow-shadowColor">
           <form
             className="px-8 pt-6 pb-8 mb-4"
             data-netlify="true"
