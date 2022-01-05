@@ -52,11 +52,11 @@ function Services() {
     >
       <div className="mt-4 lg:pl-12">
         <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor mt-5">
-          ₱5,000 Per Month, 6 Months Minimum Contract
+          ₱0 Down, ₱5,000 Per Month
         </h2>
         <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">
-          ₱7,000 down for a standard 5 page small business website. If you need
-          more than that then we have to do custom pricing based on the scope of
+          ₱0 down for a standard 5 page small business website. If you need more
+          than that then we have to do custom pricing based on the scope of
           work, number of additional pages, and time involved.
         </p>
         <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">
