@@ -55,7 +55,7 @@ function Services() {
           ₱0 Down, ₱5,000 Per Month
         </h2>
         <p className="mt-8 md:text-lg lg:w-9/12 text-secondaryTextColor">
-          ₱0 down for a standard 5 page small business website. If you need more
+          ₱0 down for a standard 5-page small business website. If you need more
           than that then we have to do custom pricing based on the scope of
           work, number of additional pages, and time involved.
         </p>
