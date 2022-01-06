@@ -17,7 +17,7 @@ export default function Projects() {
     {
       name: "Junix",
       img: "/junix.png",
-      url: "https://junix.netlify.app/com",
+      url: "https://junix.netlify.app/",
     },
   ];
   return (
