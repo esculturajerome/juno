@@ -46,7 +46,7 @@ export default function Projects() {
                 target="_blank"
                 className="bg-SecondaryColor-light rounded-lg p-4 flex justify-between m-4"
               >
-                <p className="text-SecondaryColor-dark">Visit the website</p>
+                <p className="text-SecondaryColor-dark">Visit Website</p>
                 <ExternalLinkIcon className="w-5 h-5 text-SecondaryColor-dark" />
               </a>
             </div>
