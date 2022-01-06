@@ -30,7 +30,10 @@ export default function Projects() {
       <div className="px-3 lg:flex lg:flex-col text-center items-center">
         <div className="grid md:grid-cols-3 gap-4 lg:gap-8 px-4 mt-8 text-center lg:px-16 lg:w-9/12">
           {projects.map((item) => (
-            <div className="flex flex-col justify-between bg-white rounded-md hover:bg-gray-50 shadow-xl shadow-shadowColor">
+            <div
+              className="flex flex-col justify-between bg-white rounded-md hover:bg-gray-50 shadow-xl shadow-shadowColor"
+              key={item.name}
+            >
               <Image
                 src={item.img}
                 width="300"
