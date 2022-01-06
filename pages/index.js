@@ -6,6 +6,7 @@ import Services from "@components/Services";
 import WhatWeDo from "@components/WhatWeDo";
 import MainSection from "@components/MainSection";
 import GetInTouch from "@components/GetInTouch";
+import Projects from "@components/Projects";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <WhatWeDo />
       <Services />
       <Pricing />
+      <Projects />
       <GetInTouch />
       <Footer />
     </div>

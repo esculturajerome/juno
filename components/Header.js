@@ -11,6 +11,7 @@ import {
   CodeIcon,
   TagIcon,
   TemplateIcon,
+  DesktopComputerIcon,
 } from "@heroicons/react/outline";
 
 import { Link } from "react-scroll";
@@ -170,6 +171,14 @@ export default function Example() {
             >
               Pricing
             </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={1000}
+              className="text-base font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
+            >
+              Projects
+            </Link>
 
             <Popover className="relative">
               {({ open }) => (
@@ -306,7 +315,7 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <TemplateIcon
+                    <CodeIcon
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
@@ -321,7 +330,7 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <CodeIcon
+                    <TemplateIcon
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
@@ -341,6 +350,20 @@ export default function Example() {
                     />
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Pricing
+                    </span>
+                  </Link>
+                  <Link
+                    to="projects"
+                    smooth={true}
+                    duration={1000}
+                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
+                  >
+                    <DesktopComputerIcon
+                      className="flex-shrink-0 h-6 w-6 mainColor"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 text-base font-medium text-gray-900">
+                      Projects
                     </span>
                   </Link>
                 </nav>
