@@ -315,11 +315,11 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <CodeIcon
-                      className="flex-shrink-0 h-6 w-6 mainColor"
-                      aria-hidden="true"
-                    />
-                    <Popover.Button>
+                    <Popover.Button className="flex">
+                      <CodeIcon
+                        className="flex-shrink-0 h-6 w-6 mainColor"
+                        aria-hidden="true"
+                      />
                       <span className="ml-3 text-base font-medium text-gray-900">
                         What We Do
                       </span>
@@ -332,11 +332,11 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <TemplateIcon
-                      className="flex-shrink-0 h-6 w-6 mainColor"
-                      aria-hidden="true"
-                    />
-                    <Popover.Button>
+                    <Popover.Button className="flex">
+                      <TemplateIcon
+                        className="flex-shrink-0 h-6 w-6 mainColor"
+                        aria-hidden="true"
+                      />
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Services
                       </span>
@@ -348,11 +348,11 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <TagIcon
-                      className="flex-shrink-0 h-6 w-6 mainColor"
-                      aria-hidden="true"
-                    />
-                    <Popover.Button>
+                    <Popover.Button className="flex">
+                      <TagIcon
+                        className="flex-shrink-0 h-6 w-6 mainColor"
+                        aria-hidden="true"
+                      />
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Pricing
                       </span>
@@ -364,11 +364,11 @@ export default function Example() {
                     duration={1000}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
                   >
-                    <DesktopComputerIcon
-                      className="flex-shrink-0 h-6 w-6 mainColor"
-                      aria-hidden="true"
-                    />
-                    <Popover.Button>
+                    <Popover.Button className="flex">
+                      <DesktopComputerIcon
+                        className="flex-shrink-0 h-6 w-6 mainColor"
+                        aria-hidden="true"
+                      />
                       <span className="ml-3 text-base font-medium text-gray-900">
                         Projects
                       </span>
