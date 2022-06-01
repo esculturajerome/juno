@@ -319,9 +319,11 @@ export default function Example() {
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 text-base font-medium text-gray-900">
-                      What We Do
-                    </span>
+                    <Popover.Button>
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        What We Do
+                      </span>
+                    </Popover.Button>
                   </Link>
 
                   <Link
@@ -334,9 +336,11 @@ export default function Example() {
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 text-base font-medium text-gray-900">
-                      Services
-                    </span>
+                    <Popover.Button>
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        Services
+                      </span>
+                    </Popover.Button>
                   </Link>
                   <Link
                     to="pricing"
@@ -348,9 +352,11 @@ export default function Example() {
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 text-base font-medium text-gray-900">
-                      Pricing
-                    </span>
+                    <Popover.Button>
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        Pricing
+                      </span>
+                    </Popover.Button>
                   </Link>
                   <Link
                     to="projects"
@@ -362,9 +368,11 @@ export default function Example() {
                       className="flex-shrink-0 h-6 w-6 mainColor"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 text-base font-medium text-gray-900">
-                      Projects
-                    </span>
+                    <Popover.Button>
+                      <span className="ml-3 text-base font-medium text-gray-900">
+                        Projects
+                      </span>
+                    </Popover.Button>
                   </Link>
                 </nav>
               </div>
