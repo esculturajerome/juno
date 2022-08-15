@@ -32,7 +32,7 @@ export default function MainSection() {
       ref={vantaRef}
       id="main"
     >
-      <div className="px-3 md:px-16 lg:w-full max-w-[1600px] mx-auto">
+      <div className="px-3 md:px-16 lg:w-10/12 max-w-[1600px] mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-6xl font-medium text-mainTextColor font-MuseoRegular">
           Web Design <span className="text-mainColor font-bold">+ </span>
           <br />
