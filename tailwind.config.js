@@ -21,7 +21,7 @@ module.exports = {
       }),
       colors: {
         transparent: "transparent",
-        mainBg: "#FAFCFF",
+        mainBg: "#f7f8f2",
         secondaryBg: "#fafcffb3",
         mainColor: {
           DEFAULT: "#9EB68E",
@@ -33,11 +33,15 @@ module.exports = {
           dark: "#D3A47F",
           light: "#FDF1E7",
         },
-        mainTextColor: "#323B56",
+        mainTextColor: "#0b1e5b",
         secondaryTextColor: "#69635C",
         DarkTextColor: "#e5e5e5",
         DarksecondaryTextColor: "#6B6675",
         shadowColor: "#E6E9F1",
+      },
+      fontFamily: {
+        NatsRegular: ["nats-regular", "sans-serif"],
+        MuseoRegular: ["Museo-Slab", "sans-serif"],
       },
     },
   },

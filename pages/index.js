@@ -12,14 +12,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Juno Web Designs</title>
+        <title>Juno Web Services</title>
         <link rel="icon" href="/juno-circle.ico" />
-        <meta property="og:url" content="https://junowebdesigns.netlify.app/" />
+        <meta property="og:url" content="junowebservices.com/" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:description"
-          content="Small Business Web Design + Development"
-        />
+        <meta property="og:description" content="Web Design + Development" />
       </Head>
       <Header />
       <MainSection />

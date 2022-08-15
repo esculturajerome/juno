@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       name: "Romblon National Institute of Technology",
-      url: "https://rnit-tesda.tech/",
+      url: "https://rnit-tesda.org/",
       img: "/rnit.png",
     },
     {
@@ -21,14 +21,14 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="py-8 lg:py-20" id="projects">
+    <div className="py-8 lg:py-20  max-w-[1600px] mx-auto" id="projects">
       <div className="text-center px-5  mx-5 ">
         <h2 className="text-3xl md:text-4xl font-medium text-mainTextColor lg:mb-16">
           Look on our previous Projects
         </h2>
       </div>
       <div className="px-3 lg:flex lg:flex-col text-center items-center">
-        <div className="grid md:grid-cols-3 gap-4 lg:gap-8 px-4 mt-8 text-center lg:px-16 lg:w-9/12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8 px-4 mt-8 text-center lg:px-16 lg:w-9/12">
           {projects.map((item) => (
             <div
               className="flex flex-col justify-between bg-white rounded-md hover:bg-gray-50 shadow-xl shadow-shadowColor"
@@ -41,7 +41,7 @@ export default function Projects() {
                 alt={item.name}
                 className="rounded-t-md"
               />
-              <p className="mt-4 mx-5 lg:py-6 text-mainColor-dark">
+              <p className="mt-4 mx-5 lg:py-6 text-mainColor-dark font-NatsRegular text-xl">
                 {item.name}
               </p>
               <a

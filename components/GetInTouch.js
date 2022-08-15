@@ -3,18 +3,21 @@ import Button from "./Button";
 
 function GetInTouch() {
   return (
-    <div className="lg:flex lg:flex-col items-center px-3 py-10" id="contact">
-      <div className="grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:w-9/12">
+    <div
+      className="lg:flex lg:flex-col items-center px-3 py-10    bg-gradient-to-t from-mainBg to-secondaryBg"
+      id="contact"
+    >
+      <div className="grid lg:grid-cols-2 lg:gap-10 lg:items-center lg:w-9/12 max-w-[1600px] mx-auto">
         <div className="px-8 mb-8 lg:mb-0">
-          <p className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor">
             Get in touch
-          </p>
+          </h2>
           <p className="md:text-lg mt-3 text-secondaryTextColor">
             Want to know more us? <br /> We're ready to answer any and all
             questions.
           </p>
         </div>
-        <div className="py-10 px-2 bg-white rounded-lg hover:bg-gray-50 shadow-xl shadow-shadowColor">
+        <div className="py-10 px-2 bg-white rounded-lg border ">
           <form
             className="px-8 pt-6 pb-8 mb-4"
             data-netlify="true"
@@ -52,7 +55,7 @@ function GetInTouch() {
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
-                type="email"
+                type="text"
                 placeholder="Email"
                 name="Email"
               />

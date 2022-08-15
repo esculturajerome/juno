@@ -47,10 +47,10 @@ function Services() {
   ];
   return (
     <div
-      className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full mt-5"
+      className="px-5 flex flex-col lg:flex-row lg:place-items-center lg:h-full mt-5 max-w-[1600px] mx-auto"
       id="services"
     >
-      <div className="mt-4 lg:pl-12">
+      <div className="mt-4 lg:pl-12  ">
         <h2 className="text-2xl md:text-3xl lg:text-4xl lg:font-semibold text-mainTextColor mt-5">
           ₱0 Down, ₱5,000 Per Month
         </h2>
@@ -63,7 +63,7 @@ function Services() {
           You own your domain, content, listing, and profiles.
         </p>
       </div>
-      <div className="relative grid gap-8 px-4 py-6 mt-8 md:grid-cols-3">
+      <div className="relative grid gap-8 px-4 py-6 mt-8 sm:grid-cols-2 md:grid-cols-3">
         {services.map((item) => (
           <div
             key={item.name}
@@ -75,10 +75,10 @@ function Services() {
               aria-hidden="true"
             />
             <div className="ml-4 md:ml-0 md:mt-8">
-              <p className="md:text-xl font-medium text-mainTextColor">
+              <p className="text-2xl font-medium text-mainTextColor font-NatsRegular">
                 {item.name}
               </p>
-              <p className="md:text-lg mt-1 text-gray-500">
+              <p className="md:text-lg mt-1 text-gray-500 font-NatsRegular">
                 {item.description}
               </p>
             </div>
