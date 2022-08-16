@@ -39,8 +39,8 @@ export default function MainSection() {
           Development
         </h2>
         <p className="py-5 md:text-xl md:w-6/12 lg:pb-16 text-secondaryTextColor ">
-          No page builders or WordPress - We offer 100% hand-coded websites with
-          superior results starting at ₱5,000/month.
+          No page builders or WordPress needed. We offer 100% hand-coded
+          websites with superior results, starting at ₱5,000/month!
         </p>
         <Link to="contact" smooth={true} duration={1000}>
           <Button text="Get in touch" />

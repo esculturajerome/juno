@@ -52,7 +52,7 @@ function Pricing() {
       <div className="relative grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-4 py-6 mt-8 text-center lg:px-16 lg:w-10/12">
         {pricing.map((item) => (
           <div
-            className="-m-3 bg-mainBg flex flex-col  items-center rounded-md hover:bg-gray-50 shadow-xl shadow-shadowColor"
+            className="-m-3 bg-mainBg flex flex-col  items-center rounded-md  shadow-xl shadow-shadowColor"
             key={item.subTitle}
           >
             <h2 className="text-xl font-medium text-SecondaryColor-dark w-full bg-SecondaryColor-light py-5 text-center">

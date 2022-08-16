@@ -10,19 +10,19 @@ function WhatWeDo() {
     {
       name: "Mobile-First Design",
       description:
-        "We start building your site for mobile devices first, then we add on to it to make tablet and desktop.",
+        "We start building your site for mobile devices first before proceeding to making tablet and desktop versions.",
       icon: DeviceMobileIcon,
     },
     {
       name: "Fully Responsive",
       description:
-        "Your website will fit all mobile screens sizes, tablets, and desktop sizes so new clients can access your site from anywhere.",
+        "Your website will be responsive on all screen sizes for best experience.",
       icon: ColorSwatchIcon,
     },
     {
       name: "Optimization",
       description:
-        "60% of all internet traffic is on mobile devices, so we optimize your mobile to perform their best in search engines.",
+        "We optimize your website for mobile device to perform their best in search engines because 60% of the internet traffic is on mobile devices.",
       icon: LightningBoltIcon,
     },
   ];
@@ -36,10 +36,10 @@ function WhatWeDo() {
           What we do
         </h2>
         <p className="md:text-lg lg:px-72 text-secondaryTextColor">
-          We specialize in organization and business web design and development.
-          Every line of code is written by hand to ensure the best performance,
-          which helps bring in more customers to your site and bring more
-          revenue to your business.
+          We specialize developing and designing websites for organizations and
+          businesses. Every line of code is written by hand to ensure the best
+          performance, which helps bring in more customers to your site and gain
+          more revenue to your business.
         </p>
       </div>
       <div className="lg:flex lg:flex-col items-center max-w-[1600px] mx-auto">
