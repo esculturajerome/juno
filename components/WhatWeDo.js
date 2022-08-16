@@ -47,7 +47,7 @@ function WhatWeDo() {
           {PrimaryServices.map((item) => (
             <div key={item.name} className="flex flex-col place-items-center ">
               <item.icon
-                className="h-16 w-16 text-mainColor-dark bg-white p-3 rounded-full shadow-xl shadow-shadowColor mb-4"
+                className="h-16 w-16 text-mainColor bg-white p-2 rounded-full shadow-xl shadow-shadowColor mb-4"
                 aria-hidden="true"
               />
               <h2 className="text-xl font-medium py-3 text-mainTextColor">

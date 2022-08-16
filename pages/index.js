@@ -16,7 +16,11 @@ export default function Home() {
         <link rel="icon" href="/juno-circle.ico" />
         <meta property="og:url" content="junowebservices.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Web Design + Development" />
+        <meta property="og:title" content="Juno Web Services" key="title" />
+        <meta
+          property="og:description"
+          content="We specialize developing and designing websites for organizations and businesses. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and gain more revenue to your business."
+        />
       </Head>
       <Header />
       <MainSection />
