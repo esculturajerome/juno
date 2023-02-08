@@ -28,7 +28,7 @@ export default function MainSection() {
   }, [vantaEffect]);
   return (
     <div
-      className="h-screen/3/4 grid place-items-center "
+      className="h-screen/3/4 grid place-items-center bg-mainBg"
       ref={vantaRef}
       id="main"
     >

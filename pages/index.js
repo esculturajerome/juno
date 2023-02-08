@@ -9,6 +9,7 @@ import GetInTouch from "@components/GetInTouch";
 import Projects from "@components/Projects";
 
 export default function Home() {
+  // Introducing Jerome Escultura, a highly qualified individual with a Master's degree in Information Technology and a wealth of experience in the field. With 5 years of experience as a web consultant, Jerome has honed his skills in delivering innovative and effective web solutions to clients from various industries. He has a deep understanding of the latest technologies and trends in the web development landscape, which he leverages to provide his clients with cutting-edge and highly functional websites. Whether you're looking for a new website, an upgrade to your existing one, or simply need advice on how to take your online presence to the next level, Jerome is the right person for the job. Get in touch with him today to experience the best in web consulting!
   return (
     <div>
       <Head>
