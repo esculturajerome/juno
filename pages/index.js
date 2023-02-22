@@ -24,7 +24,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://jescultura.com/juno-og.png"
+          content="https://junowebservices.com/juno-og.png"
         />
       </Head>
       <Header />
