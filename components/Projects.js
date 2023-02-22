@@ -15,9 +15,9 @@ export default function Projects() {
       url: "https://twc.tesda.gov.ph/",
     },
     {
-      name: "Junix",
-      img: "/junix.png",
-      url: "https://junix.netlify.app/",
+      name: "Jerome Escultura Portfolio",
+      img: "/jerome.png",
+      url: "https://jescultura.com/",
     },
   ];
   return (

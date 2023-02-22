@@ -22,6 +22,10 @@ export default function Home() {
           property="og:description"
           content="We specialize developing and designing websites for organizations and businesses. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and gain more revenue to your business."
         />
+        <meta
+          property="og:image"
+          content="https://jescultura.com/juno-og.png"
+        />
       </Head>
       <Header />
       <MainSection />
