@@ -36,11 +36,11 @@ function GetInTouch() {
         <form
       data-netlify="true"
       method="post"
-      name="RNITContact"
+      name="JunoContact"
       onSubmit={handleSubmit}
     >
-      <input type="hidden" name="form-name" value="RNITContact" />
-      <input type="hidden" name="subject" value="RNIT Website Inquiry" />
+      <input type="hidden" name="form-name" value="JunoContact" />
+      <input type="hidden" name="subject" value="Juno Website Inquiry" />
 
       
           {/* <form
