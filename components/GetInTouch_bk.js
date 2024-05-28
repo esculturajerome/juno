@@ -1,21 +1,6 @@
-import { useRouter } from "next/router";
 import React from "react";
 
 function GetInTouch() {
-  const router = useRouter();
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => router.push("/success"))
-      .catch((error) => alert(error));
-  };
   return (
     <div
       className="lg:flex lg:flex-col items-center px-3 py-10 bg-gradient-to-t from-mainBg to-secondaryBg"
@@ -32,18 +17,7 @@ function GetInTouch() {
           </p>
         </div>
         <div className="py-10 px-2 bg-white rounded-lg border ">
-
-        <form
-      data-netlify="true"
-      method="post"
-      name="RNITContact"
-      onSubmit={handleSubmit}
-    >
-      <input type="hidden" name="form-name" value="RNITContact" />
-      <input type="hidden" name="subject" value="RNIT Website Inquiry" />
-
-      
-          {/* <form
+          <form
             className="px-8 pt-6 pb-8 mb-4"
             data-netlify="true"
             method="post"
@@ -53,7 +27,7 @@ function GetInTouch() {
             <input type="hidden" name="contact-form" value="Contact Form" />
             <div hidden>
               <input name="bot-field" />
-            </div> */}
+            </div>
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -98,11 +72,6 @@ function GetInTouch() {
                 type="text"
                 placeholder="Phone Number"
                 name="Number"
-                onKeyDown ={(event) => {
-                  if (!/[0-9]/.test(event.key)) {
-                    event.preventDefault();
-                  }
-                }}
               />
             </div>
             <div className="mb-6">
